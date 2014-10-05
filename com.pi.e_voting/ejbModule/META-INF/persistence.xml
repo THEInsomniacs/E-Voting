@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	
+	
+	<persistence-unit name="com.pi.e_voting">
+
+	<jta-data-source>java:jboss/datasources/e_voting</jta-data-source>
+	<properties>
+	<property name="hibernate.hbm2ddl.auto" value="create"/>
+	<property name="hibernate.show_sql" value="true"/>
+	</properties>
+	
+		<class>com.pi.e_voting.entities.Ballot</class>
+		<class>com.pi.e_voting.entities.Candidat</class>
+		<class>com.pi.e_voting.entities.Elector</class>
+		<class>com.pi.e_voting.entities.ISIEAdministrator</class>
+		<class>com.pi.e_voting.entities.News</class>
+		<class>com.pi.e_voting.entities.Observer</class>
+		<class>com.pi.e_voting.entities.Party</class>
+		<class>com.pi.e_voting.entities.PartyAdministrator</class>
+		<class>com.pi.e_voting.entities.PollingAgent</class>
+		<class>com.pi.e_voting.entities.PollingStationAgent</class>
+		<class>com.pi.e_voting.entities.PresidingOfficier</class>
+		<class>com.pi.e_voting.entities.Read</class>
+		<class>com.pi.e_voting.entities.ReadPK</class>
+		<class>com.pi.e_voting.entities.Repport</class>
+		<class>com.pi.e_voting.entities.Resultat</class>
+		<class>com.pi.e_voting.entities.Type</class>
+		<class>com.pi.e_voting.entities.User</class>
+		<class>com.pi.e_voting.entities.Validate</class>
+		<class>com.pi.e_voting.entities.ValidatePK</class>
+	</persistence-unit>
+</persistence>
