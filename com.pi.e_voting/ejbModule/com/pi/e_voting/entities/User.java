@@ -5,9 +5,14 @@ import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.MappedSuperclass;
 
-@Entity
-public class User implements Serializable {
+//@Inheritance(strategy=InheritanceType.TABLE_PER_CLASS)
+//@MappedSuperclass on ajoute abstract aussi dans la classe et on enleve la @entity
+@MappedSuperclass
+public abstract class User implements Serializable {
 	
 	/**
 	 * 

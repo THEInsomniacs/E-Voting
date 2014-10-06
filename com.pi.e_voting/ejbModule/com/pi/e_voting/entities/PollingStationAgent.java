@@ -3,8 +3,11 @@ package com.pi.e_voting.entities;
 import java.io.Serializable;
 
 import javax.persistence.Entity;
+import javax.persistence.Inheritance;
+import javax.persistence.InheritanceType;
+import javax.persistence.MappedSuperclass;
 
-@Entity
+@MappedSuperclass
 public class PollingStationAgent extends User implements Serializable {
 
 	/**
