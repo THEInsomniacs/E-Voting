@@ -19,21 +19,18 @@ public class PollingAgent extends PollingStationAgent implements Serializable{
 	private Ballot ballot;
 	
 	
+	
+	
 
-	public PollingAgent(int id, String firtsName, String lastName, int nIC,
+
+	public PollingAgent( String firtsName, String lastName, int nIC,
 			String address, String email, int phone, String station,
-			List<Elector> electors, Ballot ballot) {
-		super(id, firtsName, lastName, nIC, address, email, phone, station);
-		this.electors = electors;
-		this.ballot = ballot;
+			String password) {
+		super( firtsName, lastName, nIC, address, email, phone, station,
+				password);
 	}
 
-	public PollingAgent(int id, String firtsName, String lastName, int nIC,
-			String address, String email, int phone, String station,
-			List<Elector> electors) {
-		super(id, firtsName, lastName, nIC, address, email, phone, station);
-		this.electors = electors;
-	}
+	
 
 	public PollingAgent() {
 		super();

@@ -20,7 +20,7 @@
 		<class>com.pi.e_voting.entities.PartyAdministrator</class>
 		<class>com.pi.e_voting.entities.PollingAgent</class>
 		<class>com.pi.e_voting.entities.PollingStationAgent</class>
-		<class>com.pi.e_voting.entities.PresidingOfficier</class>
+		<class>com.pi.e_voting.entities.PresidingOfficer</class>
 		<class>com.pi.e_voting.entities.Read</class>
 		<class>com.pi.e_voting.entities.ReadPK</class>
 		<class>com.pi.e_voting.entities.Repport</class>

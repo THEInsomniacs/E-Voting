@@ -7,7 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.OneToMany;
 
 @Entity
-public class PresidingOfficier extends PollingStationAgent implements Serializable {
+public class PresidingOfficer extends PollingStationAgent implements Serializable {
 
 	/**
 	 * 
@@ -18,19 +18,19 @@ public class PresidingOfficier extends PollingStationAgent implements Serializab
 	 */
 	List<Validate>	validates;
 
-	public PresidingOfficier(int id, String firtsName, String lastName,
+	public PresidingOfficer( String firtsName, String lastName,
 			int nIC, String address, String email, int phone, String station,
 			List<Validate> validates) {
-		super(id, firtsName, lastName, nIC, address, email, phone, station);
+		super( firtsName, lastName, nIC, address, email, phone, station);
 		this.validates = validates;
 	}
 
-	public PresidingOfficier(int id, String firtsName, String lastName,
-			int nIC, String address, String email, int phone, String station) {
-		super(id, firtsName, lastName, nIC, address, email, phone, station);
+	public PresidingOfficer( String firtsName, String lastName,
+			int nIC, String address, String email, int phone, String station,String password) {
+		super( firtsName, lastName, nIC, address, email, phone, station,password);
 	}
 
-	public PresidingOfficier() {
+	public PresidingOfficer() {
 		super();
 	}
 

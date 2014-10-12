@@ -15,12 +15,12 @@ public class Validate implements Serializable {
 	 */
 	private static final long serialVersionUID = 1L;
 	private ValidatePK validatePK;
-	private PresidingOfficier presidingOfficier;
+	private PresidingOfficer presidingOfficier;
 	private Repport repport;
 	
 	private Boolean status;
 
-	public Validate(ValidatePK validatePK, PresidingOfficier presidingOfficier,
+	public Validate(ValidatePK validatePK, PresidingOfficer presidingOfficier,
 			Repport repport, Boolean status) {
 		super();
 		this.validatePK = validatePK;
@@ -44,11 +44,11 @@ public class Validate implements Serializable {
 
 	@ManyToOne
 	@JoinColumn(name="idPresidingOfficier",referencedColumnName="id",insertable=false,updatable=false)
-	public PresidingOfficier getPresidingOfficier() {
+	public PresidingOfficer getPresidingOfficier() {
 		return presidingOfficier;
 	}
 
-	public void setPresidingOfficier(PresidingOfficier presidingOfficier) {
+	public void setPresidingOfficier(PresidingOfficer presidingOfficier) {
 		this.presidingOfficier = presidingOfficier;
 	}
 

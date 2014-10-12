@@ -21,6 +21,10 @@ public class Ballot implements Serializable {
 	private Date startDate;
 	private Date endDate;
 	private String electionType;
+	private int round;
+	private boolean opened;
+	
+	
 	
 	List<PollingAgent>pollingAgents;
 	List<ISIEAdministrator>administrators;
@@ -29,6 +33,46 @@ public class Ballot implements Serializable {
 	
 	
 	
+
+
+
+	public Ballot(int id, String name, Date startDate, Date endDate,
+			String electionType, int round) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.electionType = electionType;
+		this.round = round;
+		this.opened = opened;
+	}
+
+	public Ballot(String name, Date startDate, Date endDate,
+			String electionType, int round, boolean opened) {
+		super();
+		this.name = name;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.electionType = electionType;
+		this.round = round;
+		this.opened = opened;
+	}
+
+	public Ballot(String name, Date startDate, Date endDate,
+			String electionType, int round) {
+		super();
+		this.name = name;
+		this.startDate = startDate;
+		this.endDate = endDate;
+		this.electionType = electionType;
+		this.round = round;
+	}
+
+	public Ballot(String name) {
+		super();
+		this.name = name;
+	}
 
 	public Ballot(int id, String name, Date startDate, Date endDate,
 			String electionType, List<PollingAgent> pollingAgents,
@@ -48,7 +92,6 @@ public class Ballot implements Serializable {
 	}
 	
 	@Id
-	@GeneratedValue
 	public int getId() {
 		return id;
 	}
@@ -97,6 +140,22 @@ public class Ballot implements Serializable {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+
+	public int getRound() {
+		return round;
+	}
+
+	public void setRound(int round) {
+		this.round = round;
+	}
+
+	public boolean isOpened() {
+		return opened;
+	}
+
+	public void setOpened(boolean opened) {
+		this.opened = opened;
 	}
 	
 	
