@@ -29,6 +29,17 @@ public class PresidingOfficer extends PollingStationAgent implements Serializabl
 			int nIC, String address, String email, int phone, String station,String password) {
 		super( firtsName, lastName, nIC, address, email, phone, station,password);
 	}
+	
+	
+
+	public PresidingOfficer(int id ,String firtsName, String lastName, int nIC,
+			String address, String email, int phone, String station,
+			String password) {
+		super(id,firtsName, lastName, nIC, address, email, phone, station,password);
+	}
+	
+
+	
 
 	public PresidingOfficer() {
 		super();

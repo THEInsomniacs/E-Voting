@@ -16,12 +16,16 @@ public class PollingStationAgent extends User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private String station;
+	private  boolean activated ;
 	
 	public PollingStationAgent(String firtsName, String lastName,
 			int nIC, String address, String email, int phone, String station,String password) {
 		super( firtsName, lastName, nIC, address, email, phone,password);
 		this.station = station;
+		this.activated=true;
 	}
+	
+	
 
 	public PollingStationAgent(int id, String firtsName, String lastName,
 			int nIC, String address, String email, int phone, String station,String password) {
@@ -51,6 +55,18 @@ public class PollingStationAgent extends User implements Serializable {
 
 	public void setStation(String station) {
 		this.station = station;
+	}
+
+
+
+	public boolean isActivated() {
+		return activated;
+	}
+
+
+
+	public void setActivated(boolean activated) {
+		this.activated = activated;
 	}
 	
 

@@ -20,9 +20,15 @@ public class PollingAgent extends PollingStationAgent implements Serializable{
 	
 	
 	
+
 	
-
-
+	public PollingAgent(int id , String firtsName, String lastName, int nIC,
+			String address, String email, int phone, String station,
+			String password) {
+		super(id, firtsName, lastName, nIC, address, email, phone, station,
+				password);
+	}
+	
 	public PollingAgent( String firtsName, String lastName, int nIC,
 			String address, String email, int phone, String station,
 			String password) {
